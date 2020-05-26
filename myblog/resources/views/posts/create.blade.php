@@ -8,7 +8,7 @@
   New Post
 </h1>
 <form method="post" action="{{ url('/posts') }}">
-{{ csrf_field() }}
+  {{ csrf_field() }}
 <p>
   <input type="text" name="title" placeholder="enter title" value="{{ old('title') }}">
   @if ($errors->has('title'))
